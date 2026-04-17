@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayushya AI | Project</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar glass">
+        <a href="../index.html" class="logo">Tejaswini Kulkarni</a>
+
+        <div class="nav-content">
+            <ul class="nav-links" id="navMenu">
+                <li><a href="../index.html#hero" onclick="closeMenu()">Home</a></li>
+                <li><a href="../index.html#about" onclick="closeMenu()">About</a></li>
+                <li><a href="../index.html#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="../index.html#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="../index.html#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="project-wrapper">
+        <div class="project-header">
+            <h1 class="project-title-large">Ayushya AI</h1>
+            <p class="project-text" style="max-width: 600px; margin: 0 auto;">Personal AI Doctor assistant for symptom analysis and health guidance.</p>
+        </div>
+
+        <img src="../assets/images/ayushya-image.jpg" alt="Ayushya AI Project" class="project-img-large">
+
+        <div class="project-content-box">
+            <h3 class="project-section-header">Overview</h3>
+            <p class="project-text">
+                Ayushya AI is a smart health assistant where users can describe their symptoms, and the AI analyzes the input to suggest possible conditions and home remedies. It serves as a first-response medical guide for immediate assistance.
+            </p>
+
+            <h3 class="project-section-header">Key Features</h3>
+            <ul class="project-text" style="list-style-position: inside; margin-bottom: 30px;">
+                <li>AI diagnosis using advanced symptom analysis</li>
+                <li>Medicine and home remedy suggestions</li>
+                <li>Chatbot-style interactive medical assistant</li>
+                <li>Emergency alert information</li>
+                <li>Daily health tips and wellness tracking</li>
+            </ul>
+
+            <h3 class="project-section-header">Technologies Used</h3>
+            <div class="tech-stack-list">
+                <span class="tech-badge">AI / NLP Models</span>
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Medical Datasets</span>
+                <span class="tech-badge">HTML/CSS/JS</span>
+            </div>
+
+            <h3 class="project-section-header">Purpose</h3>
+            <p class="project-text">
+                To provide the public with quick, accessible primary health guidance and reduce anxiety during medical uncertainty.
+            </p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Tejaswini Kulkarni. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Waste Bin | Project</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar glass">
+        <a href="../index.html" class="logo">Tejaswini Kulkarni</a>
+
+        <div class="nav-content">
+            <ul class="nav-links" id="navMenu">
+                <li><a href="../index.html#hero" onclick="closeMenu()">Home</a></li>
+                <li><a href="../index.html#about" onclick="closeMenu()">About</a></li>
+                <li><a href="../index.html#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="../index.html#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="../index.html#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="project-wrapper">
+        <div class="project-header">
+            <h1 class="project-title-large">Smart Waste Bin</h1>
+            <p class="project-text" style="max-width: 600px; margin: 0 auto;">IoT-enabled waste management automation.</p>
+        </div>
+        <img src="../assets/images/smart-waste-bin.jpg" alt="Smart Waste Bin" class="project-img-large">
+        <div class="project-content-box">
+            <h3 class="project-section-header">Overview</h3>
+            <p class="project-text">
+                A smart waste management system that utilizes sensors to monitor waste levels and automate disposal processes. It ensures timely collection and better hygiene in public spaces.
+            </p>
+
+            <h3 class="project-section-header">Key Features</h3>
+            <ul class="project-text" style="list-style-position: inside; margin-bottom: 30px;">
+                <li>Ultrasonic waste level detection</li>
+                <li>Automatic lid opening mechanism</li>
+                <li>IoT alert system (LEDs, Buzzer, SMS notifications)</li>
+                <li>Real-time status monitoring</li>
+            </ul>
+
+            <h3 class="project-section-header">Technologies Used</h3>
+            <div class="tech-stack-list">
+                <span class="tech-badge">Arduino / NodeMCU</span>
+                <span class="tech-badge">Ultrasonic Sensors</span>
+                <span class="tech-badge">IoT (Blynk/MQTT)</span>
+                <span class="tech-badge">C++</span>
+            </div>
+
+            <h3 class="project-section-header">Purpose</h3>
+            <p class="project-text">
+                To automate smart city maintenance and maintain public cleanliness through efficient waste management.
+            </p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Tejaswini Kulkarni. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

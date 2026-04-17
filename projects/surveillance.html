@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Surveillance | Project</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar glass">
+        <a href="../index.html" class="logo">Tejaswini Kulkarni</a>
+
+        <div class="nav-content">
+            <ul class="nav-links" id="navMenu">
+                <li><a href="../index.html#hero" onclick="closeMenu()">Home</a></li>
+                <li><a href="../index.html#about" onclick="closeMenu()">About</a></li>
+                <li><a href="../index.html#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="../index.html#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="../index.html#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="project-wrapper">
+        <div class="project-header">
+            <h1 class="project-title-large">AI Smart Surveillance</h1>
+            <p class="project-text" style="max-width: 600px; margin: 0 auto;">Intelligent motion detection and intruder tracking system.</p>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 50px; padding: 40px; background: rgba(255,255,255,0.05); border-radius: 30px; border: 1px solid var(--glass-border);">
+            <i class="fas fa-video" style="font-size: 8rem; color: var(--primary);"></i>
+        </div>
+         <img src="../assets/images/motion-detection.jpg" alt="Smart Surveillance" class="project-img-large">
+        <div class="project-content-box">
+            <h3 class="project-section-header">Overview</h3>
+            <p class="project-text">
+                An affordable AI-powered camera system designed for motion detection and alerting. It utilizes computer vision to track movements and identify potential intruders in real-time.
+            </p>
+
+            <h3 class="project-section-header">Key Features</h3>
+            <ul class="project-text" style="list-style-position: inside; margin-bottom: 30px;">
+                <li>Real-time motion detection and tracking</li>
+                <li>Instant intruder alerts</li>
+                <li>Automated video recording</li>
+                <li>Optional face detection capabilities</li>
+            </ul>
+
+            <h3 class="project-section-header">Technologies Used</h3>
+            <div class="tech-stack-list">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">OpenCV</span>
+                <span class="tech-badge">TensorFlow Lite</span>
+                <span class="tech-badge">Computer Vision</span>
+            </div>
+
+            <h3 class="project-section-header">Purpose</h3>
+            <p class="project-text">
+                To provide accessible and effective security surveillance solutions for homes and university campuses.
+            </p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Tejaswini Kulkarni. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

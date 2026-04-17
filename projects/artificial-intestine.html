@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Intestine | Project</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar glass">
+        <a href="../index.html" class="logo">Tejaswini Kulkarni</a>
+
+        <div class="nav-content">
+            <ul class="nav-links" id="navMenu">
+                <li><a href="../index.html#hero" onclick="closeMenu()">Home</a></li>
+                <li><a href="../index.html#about" onclick="closeMenu()">About</a></li>
+                <li><a href="../index.html#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="../index.html#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="../index.html#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="project-wrapper">
+        <div class="project-header">
+            <h1 class="project-title-large">Artificial Large Intestine</h1>
+            <p class="project-text" style="max-width: 600px; margin: 0 auto;">Biomedical innovation restoring functionality for patients post-surgery.</p>
+        </div>
+
+        <img src="../assets/images/gi-tract-model-2.jpg" alt="Artificial Intestine Model" class="project-img-large">
+
+        <div class="project-content-box">
+            <h3 class="project-section-header">Overview</h3>
+            <p class="project-text">
+                A biomedical innovation model designed to replicate and replace the functionality of the large intestine for patients who have undergone major surgery. This system aims to restore quality of life through advanced biological modeling and waste processing.
+            </p>
+
+            <h3 class="project-section-header">Key Features</h3>
+            <ul class="project-text" style="list-style-position: inside; margin-bottom: 30px;">
+                <li>Artificial waste processing algorithms</li>
+                <li>Fluid and nutrient absorption regulation</li>
+                <li>Advanced bacterial filtration system</li>
+                <li>Integrated safety valves for pressure management</li>
+            </ul>
+
+            <h3 class="project-section-header">Technologies & Domains</h3>
+            <div class="tech-stack-list">
+                <span class="tech-badge">Biomedical Engineering</span>
+                <span class="tech-badge">System Modeling</span>
+                <span class="tech-badge">Prototyping</span>
+                <span class="tech-badge">Healthcare Tech</span>
+            </div>
+
+            <h3 class="project-section-header">Purpose</h3>
+            <p class="project-text">
+                To drastically improve the quality of life and recovery outcomes for patients coping with the loss of large intestine functionality.
+            </p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Tejaswini Kulkarni. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

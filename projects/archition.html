@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archition | Project</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar glass">
+        <a href="../index.html" class="logo">Tejaswini Kulkarni</a>
+
+        <div class="nav-content">
+            <ul class="nav-links" id="navMenu">
+                <li><a href="../index.html#hero" onclick="closeMenu()">Home</a></li>
+                <li><a href="../index.html#about" onclick="closeMenu()">About</a></li>
+                <li><a href="../index.html#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="../index.html#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="../index.html#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="project-wrapper">
+        <div class="project-header">
+            <h1 class="project-title-large">Archition</h1>
+            <p class="project-text" style="max-width: 600px; margin: 0 auto;">AI Architecture Design Assistant for layouts, blueprints, and cost estimation.</p>
+        </div>
+
+        <img src="../assets/images/archistar-1.jpg" alt="Archition Project" class="project-img-large">
+
+        <div class="project-content-box">
+            <h3 class="project-section-header">Overview</h3>
+            <p class="project-text">
+                Archition is an AI–powered architecture assistant that helps architects and civil engineers design layouts, estimate material costs, and visualize 2D/3D structures instantly. It streamlines the preliminary design phase with intelligent automation.
+            </p>
+
+            <h3 class="project-section-header">Key Features</h3>
+            <ul class="project-text" style="list-style-position: inside; margin-bottom: 30px;">
+                <li>AI-based layout suggestions optimized for space</li>
+                <li>Auto–generated structural blueprints</li>
+                <li>Real-time cost & material estimation</li>
+                <li>Interactive 3D visualization using Three.js</li>
+                <li>Sustainable architecture recommendations</li>
+                <li>Export comprehensive plans as PDF</li>
+            </ul>
+
+            <h3 class="project-section-header">Technologies Used</h3>
+            <div class="tech-stack-list">
+                <span class="tech-badge">Python (Backend AI)</span>
+                <span class="tech-badge">OpenAI / Gemini API</span>
+                <span class="tech-badge">Three.js</span>
+                <span class="tech-badge">HTML/CSS/JS</span>
+                <span class="tech-badge">Firebase</span>
+            </div>
+
+            <h3 class="project-section-header">Purpose</h3>
+            <p class="project-text">
+                To significantly reduce the time required for architectural planning and generate accurate, AI-backed design insights for professionals and students.
+            </p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Tejaswini Kulkarni. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

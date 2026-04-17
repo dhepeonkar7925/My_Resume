@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!-- Deployment Revision: 1.0.1 - Fixed Routing -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onkar Dhepe | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar glass">
+        <a href="#hero" class="logo">Onkar Dhepe</a>
+
+        <div class="nav-content">
+            <ul class="nav-links" id="navMenu">
+                <li><a href="#hero" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="social-links-nav">
+                    <a href="https://github.com/dhepeonkar7925" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/onkardhepe-b68677215/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span style="color: var(--primary);">Onkar Dhepe</span></h1>
+                <div class="typing-container"></div>
+                
+                <p>
+                    I build intelligent, user-centric digital experiences. <br>
+                    Blending <strong>Full-Stack Development</strong> with <strong>Artificial Intelligence</strong> to create software that solves real-world problems.
+                </p>
+
+                <div class="buttons">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn2">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image skeleton">
+            <img src="assets/images/your-photo.jpg" alt="Onkar Dhepe" class="profile-img">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="reveal">
+        <h3 class="section-title">About Me</h3>
+        <div class="about-content glass">
+            <p>
+                <strong>Hello! I’m Onkar.</strong> <br><br>
+                I am a passionate Developer and AI Enthusiast dedicated to building smart, scalable applications. 
+                My expertise spans <strong>Web Development</strong>, <strong>Machine Learning</strong>, and <strong>IoT Solutions</strong>. 
+                I love turning complex logic into beautiful, intuitive interfaces. 
+                Whether it's designing a sleek portfolio or training a neural network, 
+                I focus on <em>clean code</em> and <em>impactful design</em>.
+            </p>
+            <button class="about-btn" onclick="window.open('Name.pdf')">Download Resume</button>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h3 class="section-title">Technical Expertise</h3>
+
+        <div class="skills-container-v2">
+            <!-- Web Development -->
+            <div class="skill-category reveal skeleton">
+                <h4><i class="fas fa-code"></i> Web Development</h4>
+                <div class="skills-grid-v2">
+                    <div class="skill-pill">HTML5</div>
+                    <div class="skill-pill">CSS3</div>
+                    <div class="skill-pill">JavaScript</div>
+                    <div class="skill-pill">React</div>
+                </div>
+            </div>
+
+            <!-- AI & Data Science -->
+            <div class="skill-category reveal skeleton">
+                <h4><i class="fas fa-brain"></i> AI & Data Science</h4>
+                <div class="skills-grid-v2">
+                    <div class="skill-pill">Python</div>
+                    <div class="skill-pill">Data Analysis</div>
+                    <div class="skill-pill">Computer Vision</div>
+                </div>
+            </div>
+
+            <!-- Tools & IoT -->
+            <div class="skill-category reveal skeleton">
+                <h4><i class="fas fa-tools"></i> Tools & IoT</h4>
+                <div class="skills-grid-v2">
+                    <div class="skill-pill">Git / GitHub</div>
+                    <div class="skill-pill">IoT Systems</div>
+                    <div class="skill-pill">Arduino</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="reveal">
+        <h3 class="section-title">Featured Projects</h3>
+
+        <div class="projects-grid">
+
+            <a href="projects/archition.html" class="project-card-pro skeleton">
+                <div class="project-icon-pro">🏛️</div>
+                <div>
+                    <h4>Archition</h4>
+                    <p>AI-powered Architectural Design System for smarter building planning.</p>
+                </div>
+            </a>
+
+            <a href="projects/dreamai.html" class="project-card-pro skeleton">
+                <div class="project-icon-pro">🌙</div>
+                <div>
+                    <h4>DreamAI</h4>
+                    <p>AI-based Dream Interpretation Engine to analyze subconscious thoughts.</p>
+                </div>
+            </a>
+
+            <a href="projects/cognitolearn.html" class="project-card-pro skeleton">
+                <div class="project-icon-pro">📚</div>
+                <div>
+                    <h4>CognitoLearn</h4>
+                    <p>Comprehensive AI Platform for Study & Abroad Preparation.</p>
+                </div>
+            </a>
+
+            <a href="projects/verticalfarm.html" class="project-card-pro skeleton">
+                <div class="project-icon-pro">🌱</div>
+                <div>
+                    <h4>Vertical Farming</h4>
+                    <p>IoT-based Smart Agriculture system for maximizing crop yield.</p>
+                </div>
+            </a>
+
+            <a href="projects/wastebin.html" class="project-card-pro skeleton">
+                <div class="project-icon-pro">🗑️</div>
+                <div>
+                    <h4>Smart Waste Bin</h4>
+                    <p>IoT-based Waste Management Automation for cleaner cities.</p>
+                </div>
+            </a>
+
+            <a href="projects/surveillance.html" class="project-card-pro skeleton">
+                <div class="project-icon-pro">📸</div>
+                <div>
+                    <h4>Smart Surveillance</h4>
+                    <p>AI-powered Motion Detection System for enhanced security.</p>
+                </div>
+            </a>
+
+            <a href="projects/ai-quest-generator.html" class="project-card-pro skeleton">
+                <div class="project-icon-pro">🎮</div>
+                <div>
+                    <h4>AI Quest Generator</h4>
+                    <p>Dynamic AI-Powered Story & Quest Generator for RPG games.</p>
+                </div>
+            </a>
+
+            <a href="projects/ayushya-ai.html" class="project-card-pro skeleton">
+                <div class="project-icon-pro">🏥</div>
+                <div>
+                    <h4>Ayushya AI</h4>
+                    <p>AI Doctor Assistance App for preliminary diagnosis.</p>
+                </div>
+            </a>
+
+            <a href="projects/bmi-calculator.html" class="project-card-pro skeleton">
+                <div class="project-icon-pro">⚖️</div>
+                <div>
+                    <h4>BMI Calculator</h4>
+                    <p>Simple yet effective Body Mass Index & Health Calculator.</p>
+                </div>
+            </a>
+
+            <a href="projects/artificial-intestine.html" class="project-card-pro skeleton">
+                <div class="project-icon-pro">🧫</div>
+                <div>
+                    <h4>Artificial Intestine</h4>
+                    <p>Biomedical Intestine Replacement System concept.</p>
+                </div>
+            </a>
+
+            <a href="projects/skillmatch.html" class="project-card-pro">
+                <div class="project-icon-pro">🤖</div>
+                <div>
+                    <h4>AI SkillMatch</h4>
+                    <p>AI-based Career Skill Matching System for job seekers.</p>
+                </div>
+            </a>
+
+            <a href="projects/solofit-tracker.html" class="project-card-pro">
+                <div class="project-icon-pro">🏋️‍♀️</div>
+                <div>
+                    <h4>SoloFit Tracker</h4>
+                    <p>Personalized AI Fitness Tracking & Goal Coach.</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="reveal">
+        <h3 class="section-title">Get In Touch</h3>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h4>Let's Connect</h4>
+                <a href="mailto:dhepeonkar7925@gmail.com"><p><i class="fas fa-envelope"></i> dhepeonkar7925@gmail.com</p></a>
+                <a href="https://www.linkedin.com/in/onkar-dhepe-aaa7442ab" target="_blank"><p><i class="fab fa-linkedin"></i> linkedin.com/in/Onkar Dhepe</p></a>
+                <a href="https://github.com/dhepeonkar7925" target="_blank"><p><i class="fab fa-github"></i> github.com/dhepeonkar7925</p></a>
+            </div>
+
+            <form class="contact-form">
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Your Name</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Your Email</label>
+                </div>
+
+                <div class="input-box">
+                    <textarea required></textarea>
+                    <label>Your Message</label>
+                </div>
+
+                <button class="send-btn">Send Message</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Onkar Dhepe. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
